@@ -1,0 +1,75 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $main-bg;
+    padding: 36px 28px 76px;
+}
+.logo {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 65px 0;
+    &__title {
+        color: $black-color;
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 0.26px;
+        margin: 0 4px 0 8px;
+    }
+    &__subtitle {
+        color: $light-gray-color;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: -0.1px;
+        margin: 0 0 5px 0;
+    }
+}
+.nav__list  {
+    list-style-type: none;
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 11px 8px 11px 11px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    &-item:not(:last-child) {
+        margin: 0 0 29px 0;
+    }
+    &-item:hover {
+        background: $active-bg;
+        & a {
+            color: $white-color;
+        }
+        & svg path {
+            stroke: $main-bg;
+        }
+
+    }
+    &-link {
+        display: flex;
+        align-items: center;
+        color: $purple-color;
+        column-gap: 14px;
+    }
+}
+.active {
+    background: $active-bg;
+}
+.active a {
+    color: $white-color;
+}
+.active svg path {
+    stroke: $main-bg;
+}
+.user {
+    display: flex;
+    column-gap: 12px;
+}
+.user__info-title {
+    color: $black-color;
+}
+.user__info-subtitle {
+    color: $grey-color;
+    font-weight: 400;
+}

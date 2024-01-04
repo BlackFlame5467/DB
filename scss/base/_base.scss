@@ -1,0 +1,28 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.14px;
+    background: $grey-bg;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: $second-bg;
+    display: flex;
+    justify-content: flex-start;
+}
+.container__content {
+    width: 100%;
+    max-width: 1134px;
+    padding: 31px 95px 0 71px;
+    margin: 0 auto;
+}
+.container__customers {
+    width: 100%;
+    max-width: 968px;
+    padding: 30px 53px 40px 38px;
+    margin: 0 auto;
+}
